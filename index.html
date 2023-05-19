@@ -15,7 +15,25 @@
 <body>
 
   
-  
+<div id="intro" class="roses">
+  <img src="orsetto.gif" alt="">
+  <script>
+    setTimeout(() => {
+  const box = document.getElementById('intro');
+
+  // 👇️ removes element from DOM
+  box.style.display = 'none';
+  const box1 = document.getElementById('divmain');
+
+// 👇️ removes element from DOM
+box1.style.display = 'block';
+  // 👇️ hides element (still takes up space on page)
+  // box.style.visibility = 'hidden';
+}, 2000);
+  </script>
+</div>
+
+<div id="divmain" class="divmain">
 <!-- partial:index.partial.html -->
 <h1>
   <a href="" class="typewrite" data-period="2000" data-type='[ "Buon 1 anno y 7 mesi juntos!" , "TI AMO IMMENSAMENTE AMORE DELLA MIA VITA!"]'>
@@ -51,5 +69,6 @@
   } );
   
 </script>
+</div>
 </body>
 </html>
